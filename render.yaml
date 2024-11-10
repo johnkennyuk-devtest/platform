@@ -2,7 +2,7 @@ services:
   - type: web
     name: parcelvoy
     env: docker
-    repo: https://github.com/parcelvoy/platform.git
+    repo: https://github.com/johnkennyuk-devtest/platform.git
     dockerfilePath: ./docker/Dockerfile.render
     dockerContext: .
     autoDeploy: false
@@ -68,7 +68,7 @@ services:
     maxmemoryPolicy: noeviction # optional (defaults to allkeys-lru)
   - type: pserv
     name: mysql
-    plan: standard
+    plan: free
     env: docker
     repo: https://github.com/render-examples/mysql
     autoDeploy: false
